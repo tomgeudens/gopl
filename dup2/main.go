@@ -33,6 +33,7 @@ func main() {
 		// process standard input
 		countLines(os.Stdin, counts)
 	} else {
+		// process named files
 		for _, arg := range files {
 			f, err := os.Open(arg)
 			if err != nil {
